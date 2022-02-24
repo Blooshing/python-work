@@ -43,7 +43,7 @@ windowUR=windowCenter.clone()
 windowUR.move(0.5*windowWidth, 0.5*windowWidth)
 windowLL=windowCenter.clone()
 windowLL.move(-0.5*windowWidth, -0.5*windowWidth)
-
+window=Rectangle(windowLL, windowUR).draw(win)
 #drawing the roof
 
 message.setText("Click on the peak of the roof")
@@ -52,6 +52,7 @@ peak=win.getMouse()
 houseUL=houseUR.clone()
 houseUL.move(-houseWidth,0)
 roof = Polygon(peak, houseUR, houseUL).draw(win)
+
 main()
 
 
