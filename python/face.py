@@ -1,0 +1,18 @@
+from graphics import*
+def main():
+    win=GraphWin("Face", 400,400)
+    win.setCoords(-10,-10,10,10)
+    win.setBackground("White")
+    head= Circle(Point(0,0), 10).draw(win)
+    head.setFill("pink")
+    leftEye=Circle(Point(-7,4),1.5).draw(win)
+    mouth=Oval(Point(-5,-2), Point(2,-5)).draw(win)
+    mouth.setFill=("black")
+    nose=Line(Point(-4,1), Point(-2,2))
+    nose.draw(win)
+    rightEye=leftEye.clone()
+    rightEye.move(10,0)
+    rightEye.setFill("Red")
+    leftEye.setFill("blue")
+    rightEye.draw(win)
+main()
