@@ -1,0 +1,1 @@
+Welcome to CS 170. We will learn how to code in Python. 
