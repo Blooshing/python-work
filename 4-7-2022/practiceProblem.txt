@@ -1,0 +1,4 @@
+Input File = names with an original grade
+Create a program to read the first file and then add +5 points into the output file. 
+
+Output file is going to show the students with the updated grades. 
