@@ -1,0 +1,13 @@
+from math import* 
+def ListSqrRoot(nums):
+    n = len(nums)
+    for i in range(n):
+        nums[i]=sqrt(nums[i])
+def main():
+    nums = eval(input("Please enter a list of numbers: "))
+    print("Before calling the function your list: ")
+    print(nums)
+    ListSqrRoot(nums)
+    print("After calling the function your list: ")
+    print(nums) 
+main() 

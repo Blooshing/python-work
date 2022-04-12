@@ -1,0 +1,8 @@
+def average (a,c,b):
+    avr = (a+b+c)/3.0
+    return avr
+def main():
+    a,b,c = eval(input("Please enter any three values: "))
+    avr1 = average(a,b,c)
+    print("The average of these numbers =",avr1)
+main()

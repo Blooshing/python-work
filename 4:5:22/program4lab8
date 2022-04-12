@@ -1,0 +1,9 @@
+def sumList(nums):
+    total = 0
+    for i in range(len(nums)):
+        total = total+nums[i]
+    return total
+def main():
+    numbers = eval(input("Please enter a list of numbers: "))
+    print("The sum of the numbers in the list is:", sumList(numbers))
+main()
