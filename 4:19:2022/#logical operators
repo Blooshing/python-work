@@ -1,0 +1,29 @@
+#logical operators. 
+#Boolean operators. 
+#and = both objects need to be true 
+#or = one or both objects can be true, but only one needs to be true
+#not = inverse of the input == output 
+#precedence is as follows: not, and, or. 
+def main(): 
+    x1, y1 = eval(input('Enter the x and y coordinate of the first point: '))
+    x2, y2 = eval(input('Enter the x and y coordinate of the second point: '))
+    
+    if (x1 == x2) and (y1 == y2): 
+        print("These are two identical points")
+    else: 
+        print("These are two different points")
+    
+main()
+
+#< !--- graphics form ---!> 
+
+from graphics import* 
+def graphicsForm():
+    win = GraphWin()
+    p1 = win.getMouse()
+    p2 = win.getMouse()
+    
+    if p1.getX() == p2.getX() and p1.getY() == p2.getY():
+        print("These are the same points")
+    else: 
+        print("These are different points")

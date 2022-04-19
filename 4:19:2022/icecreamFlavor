@@ -1,0 +1,8 @@
+def main():
+    ans = input("What is your favorite ice cream flavor or [vanilla]: ")
+    if ans:
+        flavor = ans
+    else:
+        flavor = vanilla
+    print("Your favorite flavor of ice cream is", flavor)
+main() 

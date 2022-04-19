@@ -1,0 +1,15 @@
+def main():
+    quizGrade = eval(input("Please input the quiz grade of the student: "))
+    if quizGrade >= 5:
+        print("A")
+    elif quizGrade >= 4:
+        print('B')
+    elif quizGrade >= 3:
+        print('C')
+    elif quizGrade >= 2:
+        print('D')
+    elif quizGrade <= 1:
+        print('F')
+    elif quizGrade <= 0:
+        print('F')
+main()

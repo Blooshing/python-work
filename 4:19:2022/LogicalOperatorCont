@@ -1,0 +1,9 @@
+def main():
+    recentGrad = (input("Are you a recent graduate? (Y or N): "))
+    employee = (input("Are you an employee? (Y or N): "))
+    
+    if recentGrad.lower() == "Y" and employee.lower() == "Y":
+        print("You are eligible for the loan.")
+    else: 
+        print("You are not eligible for the loan.")
+main()
