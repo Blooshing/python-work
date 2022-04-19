@@ -1,0 +1,51 @@
+def main():
+    fName= input("Enter the input file name: ")
+    infile = open(fName, 'r')
+    
+    total = 0.0 
+    
+    count = 0
+    
+    line = infile.readline()
+    
+    while line!="":
+        total = total + eval(line)
+        count = count + 1
+        line = infile.readline()
+    average = total/count
+    print("Average = ", average)
+main()
+
+def doubleMain():
+    fName = input("Please enter a file name: ")
+    infile = open(fName, 'r')
+    total = 0.0
+    count = 0
+    for line in infile: 
+        total = total +eval(line)
+        count = count + 1
+    average = total/count
+    
+    print("average =", average)
+doubleMain()
+
+def tripleMain():
+    
+    fname = input("Enter the input file name: ")
+    infile = open(fname, 'r')
+    
+    total = 0.0 
+    count = 0
+    
+    line = infile.readline()
+    
+    while line !="":
+        for xStr in line.split():
+        #this is if you have a split inbetween your numbers
+            total = total +eval(xStr)
+            count = count + 1 
+        line = infile.readline()
+    average = total/count
+    print("Average = ",average)
+tripleMain()
+    

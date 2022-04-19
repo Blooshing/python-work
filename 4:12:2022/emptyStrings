@@ -1,0 +1,14 @@
+def main():
+    value = input("Enter a value or press ENTER when done: ")
+    total = 0.0
+    count = 0 
+    
+    while value != "":
+        total = total + eval(value)
+        count = count+1
+        value = input("Enter a value or press ENTER when done:")
+    average = total/count
+    
+    print("Average =", average)
+    
+main()
